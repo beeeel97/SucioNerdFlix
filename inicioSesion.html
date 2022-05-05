@@ -29,6 +29,9 @@
       }
     </style>
     <header>
+      <!-- <li class="nav-item">
+        <a href="" class="nav-link active"> </a> <img src="image 1.png" alt="">
+      </li> -->
       <nav
         class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between"
       >
@@ -38,26 +41,32 @@
 
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="" class="nav-link active">Home</a>
+            <a href="" class="nav-link disabled">Home</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Peliculas</a>
+            <a href="" class="nav-link disabled">Peliculas</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Series</a>
+            <a href="" class="nav-link disabled">Series</a>
           </li>
           <li class="nav-item">
             <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Favoritos</a>
+            <a href="" class="nav-link disabled">Favoritos</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">En reproducion</a>
+            <a href="" class="nav-link disabled">En reproducion</a>
           </li>
         </ul>
         <div>
-          <img class="nav-link" src="perfil.png" alt="" width="60" height="" />
+          <img
+            class="nav-link btn btn-outline-light btn-floating m-1"
+            src="PerfilSF.png"
+            alt=""
+            width="60"
+            height=""
+          />
         </div>
       </nav>
     </header>
@@ -65,10 +74,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-3 col-md-3"></div>
 
-        <form
-          class="was-validated form col-lg-4 col-md-6 col-sm-12 bg-white"
-          action=""
-        >
+        <form class="form col-lg-4 col-md-6 col-sm-12 bg-white" action="">
           <h2 class="titulo">Iniciar sesion</h2>
 
           <div class="mb-3 mt-3">
@@ -81,10 +87,6 @@
               required
               pattern="[a-zA-Z]{5,20}"
             />
-            <div class="invalid-feedback">
-              Introduzca un usuario con solo letras mayusculas y/o minusculas
-            </div>
-            <div class="valid-feedback">Correcto</div>
           </div>
 
           <div class="mb-3 mt-3">
@@ -97,13 +99,14 @@
               required
               pattern="[a-zA-Z0-9]{8,20}"
             />
-            <div class="invalid-feedback">
-              Introduzca una contraseña alfanumerica sin caracteres especiales y
-              minimo de 8 caracteres
-            </div>
-            <div class="valid-feedback">Correcto</div>
           </div>
-          <button type="submit" class="btn btn-success">Aceptar</button>
+          <p>
+            Al continuar, aceptas nuestras
+            <span class="text-success">
+              <a href="" style="color: #71d772">condiciones de servicio.</a>
+            </span>
+          </p>
+          <button type="submit" class="btn btn-success">Entrar</button>
         </form>
       </div>
     </main>

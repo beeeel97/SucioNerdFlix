@@ -29,6 +29,9 @@
       }
     </style>
     <header>
+      <!-- <li class="nav-item">
+        <a href="" class="nav-link active"> </a> <img src="image 1.png" alt="">
+      </li> -->
       <nav
         class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between"
       >
@@ -38,26 +41,32 @@
 
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="" class="nav-link active">Home</a>
+            <a href="" class="nav-link disabled">Home</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Peliculas</a>
+            <a href="" class="nav-link disabled">Peliculas</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Series</a>
+            <a href="" class="nav-link disabled">Series</a>
           </li>
           <li class="nav-item">
             <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Favoritos</a>
+            <a href="" class="nav-link disabled">Favoritos</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">En reproducion</a>
+            <a href="" class="nav-link disabled">En reproducion</a>
           </li>
         </ul>
         <div>
-          <img class="nav-link" src="perfil.png" alt="" width="60" height="" />
+          <img
+            class="nav-link btn btn-outline-light btn-floating m-1"
+            src="PerfilSF.png"
+            alt=""
+            width="60"
+            height=""
+          />
         </div>
       </nav>
     </header>
@@ -72,7 +81,9 @@
           <h2 class="titulo">Registrarse</h2>
 
           <div class="mb-3 mt-3">
-            <label for="nombre" class="form-label">Correo electronico</label>
+            <label for="nombre" class="form-label"
+              >Tu direccion de correo electronico</label
+            >
             <input
               type="text"
               class="form-control"
@@ -87,7 +98,7 @@
             <div class="valid-feedback">Correcto</div>
           </div>
           <div>
-            <label for="nombre" class="form-label">Nombre de Usuario</label>
+            <label for="nombre" class="form-label">Nombre de usuario</label>
             <input
               type="text"
               class="form-control"
@@ -133,7 +144,13 @@
             </div>
             <div class="valid-feedback">Correcto</div>
           </div>
-          <button type="submit" class="btn btn-success">Aceptar</button>
+          <p>
+            Al continuar, aceptas nuestras
+            <span class="text-success">
+              <a href="" style="color: #71d772">condiciones de servicio.</a>
+            </span>
+          </p>
+          <button type="submit" class="btn btn-success">Crear cuenta</button>
         </form>
       </div>
     </main>
