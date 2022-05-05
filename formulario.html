@@ -11,4 +11,97 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
+  <body>
+    <!-- <div class="container"> -->
+    <header>
+      <nav
+        class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between"
+      >
+        <div class="ps-5">
+          <img src="image 1.png" alt="" width="200" height="" />
+        </div>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Peliculas</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Series</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Favoritos</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">En reproducion</a>
+          </li>
+        </ul>
+        <div>
+          <img class="nav-link" src="perfil.png" alt="" width="60" height="" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2>Iniciar sesion</h2>
+
+      <form action="" class="was-validated">
+        <div class="mb-3 mt-3">
+          <label for="nombre" class="form-label"
+            >Usuario (5-20 letras-números):</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            placeholder="Introduzca usuario"
+            required
+            pattern="[a-zA-Z0-9]{5,20}"
+          />
+          <div class="invalid-feedback">Rellena el usuario correctamente</div>
+          <div class="valid-feedback">Correcto</div>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="contraseña" class="form-label"
+            >Contraseña (10-20 letras-números):</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="contraseña"
+            placeholder="Introduzca contraseña"
+            required
+            pattern="[a-zA-Z0-9]{10,20}"
+          />
+          <div class="invalid-feedback">
+            Introduzca la contraseña correctamente
+          </div>
+          <div class="valid-feedback">Correcto</div>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="cp" class="form-label">Código postal(5 números):</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cp"
+            placeholder="Introduzca código postal"
+            required
+            pattern="[0-9]{5}"
+          />
+          <div class="invalid-feedback">
+            Rellena el código postal correctamente
+          </div>
+          <div class="valid-feedback">Correcto</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </main>
+    <!-- </div> -->
+  </body>
 </html>
