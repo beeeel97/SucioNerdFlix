@@ -11,10 +11,16 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body class="bg-dark">
+  <body>
     <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(52, 58, 64);
+      }
       .titulo {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       form {
         display: flex;
@@ -33,7 +39,7 @@
         <a href="" class="nav-link active"> </a> <img src="image 1.png" alt="">
       </li> -->
       <nav
-        class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between"
+        class="navbar navbar-expand-sm navbar-dark d-flex justify-content-between"
       >
         <div class="ps-5">
           <img src="image 1.png" alt="" width="200" height="" />
@@ -127,7 +133,7 @@
             </div>
             <div class="valid-feedback">Correcto</div>
           </div>
-          <div class="mb-3 mt-3">
+          <div class="mb-3">
             <label for="contraseña" class="form-label"
               >Repita la contraseña</label
             >
@@ -147,10 +153,12 @@
           <p>
             Al continuar, aceptas nuestras
             <span class="text-success">
-              <a href="" style="color: #71d772">condiciones de servicio.</a>
+              <a href="" style="color: #2da38d">condiciones de servicio.</a>
             </span>
           </p>
-          <button type="submit" class="btn btn-success">Crear cuenta</button>
+          <button type="submit" class="btn" style="background-color: #2da38d">
+            Crear cuenta
+          </button>
         </form>
       </div>
     </main>
