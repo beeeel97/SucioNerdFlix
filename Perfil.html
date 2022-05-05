@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
-  <body>
+  <body style="background-color:rgb(33,37,41)">
     <header>
       <!-- <li class="nav-item">
           <a href="" class="nav-link active"> </a> <img src="image 1.png" alt="">
@@ -26,7 +26,7 @@
 
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="" class="nav-link active">Home</a>
+            <a href="" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link">Peliculas</a>
@@ -45,13 +45,34 @@
           </li>
         </ul>
         <div>
-          <img class="nav-link btn btn-outline-light btn-floating m-1" src="PerfilSF.png" alt="" width="60" height="" />
+          <img class="nav-link active btn btn-outline-light btn-floating m-1" src="PerfilSF.png" alt="" width="60" height="" />
         </div>
       </nav>
     </header>
-    <main>
 
-
+    <div class="container p-5 my-5 border bg-white text-dark">
+      
+    <!--table class="table"-->
+      <h1 class="text-dark">Perfil</h1>
+    <table align="center" text-align="center">
+        <tr>
+          
+          <td rowspan="3"><img src="PerfilSF.png" width="150"></td>
+          <td width="15%" height="50px" align="center">Usuario :</td>
+          <td width="15%" height="50px" align="center">Alex</td>
+        </tr>
+        <tr>
+          <td align="center">Contraseña: </td>
+          <td align="center">********</td>
+        </tr>
+        <tr>
+          <td align="center">Correo Electrónico: </td>
+          <td align="center">a.barbagonzalez@gmail.com</td>
+        </tr>
+    </table>
+      </div>
+  </body>
+  
   <!-- Footer -->
 <footer class="bg-dark text-center text-white">
   <!-- Container -->
@@ -89,6 +110,44 @@
       ></img>
     </section>
     <!-- Section: Redes Sociales -->
+
+    <!-- Section: Form 
+    <section class="">
+      <form action="">
+        Grid row Esto tendría que ir comentado
+        <div class="row d-flex justify-content-center">
+          Grid column Esto tendría que ir comentado
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          Grid column Esto tendría que ir comentado
+
+          Grid column Esto tendría que ir comentado
+          <div class="col-md-5 col-12">
+            Email input Esto tendría que ir comentado
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          Grid column Esto tendría que ir comentado
+
+          Grid column Esto tendría que ir comentado
+          <div class="col-auto">
+            Submit button Esto tendría que ir comentado
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          Grid column Esto tendría que ir comentado
+        </div>
+        Grid row Esto tendría que ir comentado
+      </form>
+    </section>
+    Section: Form -->
+
     <!-- Section: Text -->
     <section class="mb-4">
       <p>
@@ -160,7 +219,4 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
-    </main>
-  </body>
-
 </html>
