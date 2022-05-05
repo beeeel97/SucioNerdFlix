@@ -12,13 +12,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
-  <body style="background-color:rgb(33,37,41)">
+  <body style="background-color:rgb(52, 58, 64)">
+
+    <style>
+      .dropdown-menu{
+        background-color: rgb(33, 37, 41);
+      }
+
+      </style>
     <header>
       <!-- <li class="nav-item">
           <a href="" class="nav-link active"> </a> <img src="image 1.png" alt="">
         </li> -->
       <nav
-        class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between"
+        class="navbar navbar-expand-sm navbar-dark d-flex justify-content-between"
       >
         <div class="ps-5">
           <img src="image 1.png" alt="" width="200" height="" />
@@ -26,23 +33,35 @@
 
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="" class="nav-link">Home</a>
+            <a href="Home.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Peliculas</a>
+            <a href="Peliculas.html" class="nav-link">Peliculas</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Series</a>
+            <a href="Series.html" class="nav-link">Series</a>
           </li>
           <li class="nav-item">
             <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
           </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">Favoritos</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">En reproducion</a>
-          </li>
+          <div class="dropdown">
+            <button class="btn btn-dark" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              Favoritos
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="#">Series</a></li>
+              <li><a class="dropdown-item" href="#">Películas</a></li>   
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-dark" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              En reproducción
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="#">Series</a></li>
+              <li><a class="dropdown-item" href="#">Películas</a></li>   
+            </ul>
+          </div>
         </ul>
         <div>
           <img class="nav-link active btn btn-outline-light btn-floating m-1" src="PerfilSF.png" alt="" width="60" height="" />
@@ -52,7 +71,7 @@
 
     <div class="container p-5 my-5 border bg-white text-dark">
       
-    <!--table class="table"-->
+    
     <div class="container">
       <div class="row">
         <div class="col">
@@ -76,7 +95,7 @@
   </body>
   
   <!-- Footer -->
-<footer class="bg-dark text-center text-white">
+<footer class=" text-center text-white">
   <!-- Container -->
   <div class="container p-4">
     <!-- Section: Redes Sociales -->
