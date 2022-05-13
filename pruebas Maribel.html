@@ -60,18 +60,18 @@
     }
 } */
 
-#carousel {
+.carousel {
   overflow: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
 
-#carousel::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
   height: 0;
 }
 
-#prev,
-#next {
+.prev,
+.next {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -84,20 +84,20 @@
   position: absolute;
 }
 
-#prev {
+.prev {
   top: 50%;
   left: 0;
   transform: translate(50%, -50%);
   display: none;
 }
 
-#next {
+.next {
   top: 50%;
   right: 0;
   transform: translate(-50%, -50%);
 }
 
-#content {
+.content {
   display: grid;
   grid-gap: 16px;
   grid-auto-flow: column;
@@ -109,6 +109,12 @@
   width: 180px;
   height: 180px;
   background: green;
+}
+
+.carousel1 {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
   </style>
@@ -167,8 +173,8 @@
     <p class="text-white ms-5 mt-5">GENERO</p>
 
     <div id="wrapper">
-        <div id="carousel">
-          <div id="content">
+        <div class ="carousel" id="carousel">
+          <div class ="content" id="content">
             <img
               class="item"
               src="https://lh3.googleusercontent.com/0OynDYRoCaQWJIUyiOrUVeoub0mLNrDUcUZrJXF2WHQD77o-F_g2EnqZqVevO954WzD7mC5qTg=w512-h512-l90-rj"
@@ -251,7 +257,7 @@
             />
           </div>
         </div>
-        <button id="prev">
+        <button class ="prev" id="prev">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -262,7 +268,7 @@
             <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
           </svg>
         </button>
-        <button id="next">
+        <button class="next" id="next">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -278,8 +284,8 @@
       <p class="text-white ms-5 mt-5">GENERO</p>
 
       <div id="wrapper">
-        <div id="carousel1">
-          <div id="content1">
+        <div class ="carousel" id="carousel1">
+          <div class ="content" id="content1">
             <img
               class="item"
               src="https://lh3.googleusercontent.com/0OynDYRoCaQWJIUyiOrUVeoub0mLNrDUcUZrJXF2WHQD77o-F_g2EnqZqVevO954WzD7mC5qTg=w512-h512-l90-rj"
@@ -362,7 +368,7 @@
             />
           </div>
         </div>
-        <button id="prev1">
+        <button class ="prev" id="prev1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -373,7 +379,7 @@
             <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
           </svg>
         </button>
-        <button id="next1">
+        <button class="next" id="next1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
