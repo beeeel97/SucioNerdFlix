@@ -278,8 +278,8 @@
       <p class="text-white ms-5 mt-5">GENERO</p>
 
       <div id="wrapper">
-        <div id="carousel">
-          <div id="content">
+        <div id="carousel1">
+          <div id="content1">
             <img
               class="item"
               src="https://lh3.googleusercontent.com/0OynDYRoCaQWJIUyiOrUVeoub0mLNrDUcUZrJXF2WHQD77o-F_g2EnqZqVevO954WzD7mC5qTg=w512-h512-l90-rj"
@@ -362,7 +362,7 @@
             />
           </div>
         </div>
-        <button id="prev">
+        <button id="prev1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -373,7 +373,7 @@
             <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
           </svg>
         </button>
-        <button id="next">
+        <button id="next1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -523,9 +523,52 @@ prev.addEventListener("click", e => {
 let width = carousel.offsetWidth;
 window.addEventListener("resize", e => (width = carousel.offsetWidth));
 
+//SEGUNDO CARRUSEL
+
+const gap1 = 16;
+
+const carousel1 = document.getElementById("carousel1"),
+  content1 = document.getElementById("content1"),
+  next1 = document.getElementById("next1"),
+  prev1 = document.getElementById("prev1");
+
+next1.addEventListener("click", e => {
+  carousel1.scrollBy(width1 + gap1, 0);
+  if (carousel1.scrollWidth1 !== 0) {
+    prev1.style.display = "flex";
+  }
+  if (content1.scrollWidth - width1 - gap1 <= carousel.scrollLeft + width1) {
+    next1.style.display = "none";
+  }
+});
+prev1.addEventListener("click", e => {
+  carousel1.scrollBy(-(width1 + gap1), 0);
+  if (carousel1.scrollLeft - width1 - gap1 <= 0) {
+    prev1.style.display = "none";
+  }
+  if (!content1.scrollWidth - width1 - gap1 <= carousel1.scrollLeft + width) {
+    next1.style.display = "flex";
+  }
+});
+
+let width1 = carousel1.offsetWidth;
+window.addEventListener("resize", e => (width1 = carousel1.offsetWidth));
+
+
+
 </script>
 
 </html>
+
+
+
+
+
+
+
+
+
+
 
 
 
